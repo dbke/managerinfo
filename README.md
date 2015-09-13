@@ -1,2 +1,0 @@
-# managerinfo
-哈哈
