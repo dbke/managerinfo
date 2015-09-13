@@ -24,7 +24,7 @@
     </appender>
 
 
-    <logger name="cn.dbke.infoManager" level="warn" additivity="true">
+    <logger name="cn.dbke.infomanager" level="warn" additivity="true">
         <appender-ref ref="PROJECT" />
     </logger>
 
