@@ -4,6 +4,7 @@ import cn.dbke.info.po.ItemsCustom;
 import cn.dbke.info.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -15,7 +16,7 @@ import java.util.List;
 public class ItemsController {
     @Autowired
     private ItemsService itemsService;//service对象
-
+    @RequestMapping("/queryItems")
     public ModelAndView queryItems()throws Exception{
         // 调用service查询数据库，得到列表
         List<ItemsCustom> list=itemsService.findItemsByname(null);
