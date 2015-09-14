@@ -1,8 +1,8 @@
 package cn.dbke.info.service.impl;
 
-import cn.dbke.info.mapper.ItemsMapperCustom;
-import cn.dbke.info.po.ItemsCustom;
-import cn.dbke.info.po.ItemsQueryVo;
+import cn.dbke.info.dao.ItemsMapperCustom;
+import cn.dbke.info.domain.ItemsCustom;
+import cn.dbke.info.domain.ItemsQueryVo;
 import cn.dbke.info.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 

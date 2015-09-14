@@ -1,4 +1,4 @@
-package cn.dbke.info.po;
+package cn.dbke.info.domain;
 
 /**
  * Created by lpd on 2015/9/11.

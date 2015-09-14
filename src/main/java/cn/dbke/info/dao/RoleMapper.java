@@ -1,7 +1,7 @@
-package cn.dbke.info.mapper;
+package cn.dbke.info.dao;
 
-import cn.dbke.info.po.Role;
-import cn.dbke.info.po.RoleExample;
+import cn.dbke.info.domain.Role;
+import cn.dbke.info.domain.RoleExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
