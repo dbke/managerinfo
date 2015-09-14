@@ -1,31 +1,12 @@
 package cn.dbke.info.dal.dao;
 
-import cn.dbke.info.domain.People;
-import cn.dbke.info.domain.PeopleExample;
-import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
+import cn.dbke.info.dal.dbobject.PeopleDO;
 
 public interface PeopleDAO {
-    int countByExample(PeopleExample example);
 
-    int deleteByExample(PeopleExample example);
 
-    int deleteByPrimaryKey(String peopleId);
+    int insert(PeopleDO people);
 
-    int insert(People record);
 
-    int insertSelective(People record);
 
-    List<People> selectByExample(PeopleExample example);
-
-    People selectByPrimaryKey(String peopleId);
-
-    int updateByExampleSelective(@Param("record") People record, @Param("example") PeopleExample example);
-
-    int updateByExample(@Param("record") People record, @Param("example") PeopleExample example);
-
-    int updateByPrimaryKeySelective(People record);
-
-    int updateByPrimaryKey(People record);
 }
