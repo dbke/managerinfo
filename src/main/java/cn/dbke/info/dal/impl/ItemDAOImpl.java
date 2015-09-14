@@ -1,6 +1,6 @@
-package cn.dbke.info.dao.impl;
+package cn.dbke.info.dal.impl;
 
-import cn.dbke.info.dao.ItemDAO;
+import cn.dbke.info.dal.ItemDAO;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 

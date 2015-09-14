@@ -1,4 +1,4 @@
-package cn.dbke.info.dao;
+package cn.dbke.info.dal;
 
 import cn.dbke.info.domain.People;
 import cn.dbke.info.domain.PeopleExample;
