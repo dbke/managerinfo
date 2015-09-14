@@ -1,4 +1,4 @@
-package cn.dbke.info.dao;
+package cn.dbke.info.dal.dao;
 
 import cn.dbke.info.domain.People;
 import cn.dbke.info.domain.PeopleExample;
@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-public interface PeopleMapper {
+public interface PeopleDAO {
     int countByExample(PeopleExample example);
 
     int deleteByExample(PeopleExample example);

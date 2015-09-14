@@ -7,7 +7,7 @@
   -->
        
 <!-- namespace=mapper接口地址-->
-<mapper namespace="cn.dbke.info.dao.ItemsMapperCustom">
+<mapper namespace="cn.dbke.info.dal.dao.ItemsMapperCustom">
     <!--定义物品查询条件-->
     <sql id="querywherename">
         <if test="itemsCustom!=null">
