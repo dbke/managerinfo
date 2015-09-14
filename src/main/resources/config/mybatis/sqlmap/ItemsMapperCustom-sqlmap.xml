@@ -7,7 +7,7 @@
   -->
        
 <!-- namespace=mapper接口地址-->
-<mapper namespace="cn.dbke.info.mapper.ItemsMapperCustom">
+<mapper namespace="cn.dbke.info.dao.ItemsMapperCustom">
     <!--定义物品查询条件-->
     <sql id="querywherename">
         <if test="itemsCustom!=null">
@@ -20,8 +20,8 @@
     parameterType传入包装对象
     resultType使用扩展对象
     -->
-    <select id="findItemsByname" parameterType="cn.dbke.info.po.ItemsQueryVo"
-            resultType="cn.dbke.info.po.ItemsCustom">
+    <select id="findItemsByname" parameterType="cn.dbke.info.domain.ItemsQueryVo"
+            resultType="cn.dbke.info.domain.ItemsCustom">
           select * from items
           <where>
               <include refid="querywherename"></include>

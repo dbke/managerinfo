@@ -7,9 +7,8 @@
     <context:property-placeholder location="classpath:props/dev.properties"/>
 
 
-    <!--<import resource="classpath*:config/spring/persistence.xml"/>
-
-    <import resource="classpath*:config/spring/biz-*.xml"/>-->
+    <!--初始化持久层-->
+    <import resource="classpath*:config/spring/persistence.xml"/>
 
 
 

@@ -1,4 +1,4 @@
-package cn.dbke.info.po;
+package cn.dbke.info.domain;
 
 public class Role {
     private Integer roleId;

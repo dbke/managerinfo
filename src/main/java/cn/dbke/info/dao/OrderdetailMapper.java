@@ -1,7 +1,7 @@
-package cn.dbke.info.mapper;
+package cn.dbke.info.dao;
 
-import cn.dbke.info.po.Orderdetail;
-import cn.dbke.info.po.OrderdetailExample;
+import cn.dbke.info.domain.Orderdetail;
+import cn.dbke.info.domain.OrderdetailExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package cn.dbke.info.po;
+package cn.dbke.info.domain;
 
 import java.util.ArrayList;
 import java.util.List;

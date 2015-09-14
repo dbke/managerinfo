@@ -1,6 +1,6 @@
 package cn.dbke.info.controller;
 
-import cn.dbke.info.po.ItemsCustom;
+import cn.dbke.info.domain.ItemsCustom;
 import cn.dbke.info.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

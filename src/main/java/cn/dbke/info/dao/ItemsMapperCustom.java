@@ -1,7 +1,7 @@
-package cn.dbke.info.mapper;
+package cn.dbke.info.dao;
 
-import cn.dbke.info.po.ItemsCustom;
-import cn.dbke.info.po.ItemsQueryVo;
+import cn.dbke.info.domain.ItemsCustom;
+import cn.dbke.info.domain.ItemsQueryVo;
 
 import java.util.List;
 
