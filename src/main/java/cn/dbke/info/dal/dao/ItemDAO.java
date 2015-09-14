@@ -1,4 +1,4 @@
-package cn.dbke.info.dal;
+package cn.dbke.info.dal.dao;
 
 /**
  * Created by liyangtao on 15/9/14.

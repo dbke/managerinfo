@@ -1,4 +1,4 @@
-package cn.dbke.info.dal;
+package cn.dbke.info.dal.dao;
 
 import cn.dbke.info.domain.Role;
 import cn.dbke.info.domain.RoleExample;

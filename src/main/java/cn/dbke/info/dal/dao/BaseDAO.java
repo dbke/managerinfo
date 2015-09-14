@@ -1,4 +1,4 @@
-package cn.dbke.info.dal;
+package cn.dbke.info.dal.dao;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 

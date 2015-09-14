@@ -1,6 +1,6 @@
 package cn.dbke.info.service.impl;
 
-import cn.dbke.info.dal.ItemsMapperCustom;
+import cn.dbke.info.dal.dao.ItemsMapperCustom;
 import cn.dbke.info.domain.ItemsCustom;
 import cn.dbke.info.domain.ItemsQueryVo;
 import cn.dbke.info.service.ItemsService;

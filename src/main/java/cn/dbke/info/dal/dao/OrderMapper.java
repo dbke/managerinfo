@@ -1,4 +1,4 @@
-package cn.dbke.info.dal;
+package cn.dbke.info.dal.dao;
 
 import cn.dbke.info.domain.Order;
 import cn.dbke.info.domain.OrderExample;
