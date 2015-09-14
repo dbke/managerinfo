@@ -9,8 +9,6 @@
         <param-value>WEB-INF/logback.xml</param-value>
     </context-param>
 
-
-
     <!-- 加载logBack日志系统 -->
     <listener>
         <listener-class>ch.qos.logback.ext.spring.web.LogbackConfigListener</listener-class>
