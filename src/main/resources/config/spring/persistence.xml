@@ -15,10 +15,14 @@
               <property name="maxIdle" value="5" />
        </bean>
 
+
+
+    <bean id="sqlSessionFactoryBuilder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+
        <!-- sqlSessionFactory -->
        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-              <!-- 数据源 -->
-              <property name="dataSource" ref="dataSource" />
+           <property name="sqlSessionFactoryBuilder" ref="sqlSessionFactoryBuilder"/>
+           <property name="dataSource" ref="dataSource"/>
               <!-- 加载mybatis的全局配置文件 -->
               <property name="configLocation" value="classpath:config/mybatis/sqlMapConfig.xml" />
               <property name="mapperLocations" value="classpath*:config/mybatis/sqlmap/*-sqlmap.xml"/>
