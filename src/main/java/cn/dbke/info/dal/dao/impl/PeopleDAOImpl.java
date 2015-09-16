@@ -19,11 +19,9 @@ public class PeopleDAOImpl implements PeopleDAO,InitializingBean{
 
     private static String NAME_SPACE = "PeopleDAO.";
 
-//    @Resource
+    @Resource
     private SqlSessionFactory sqlSessionFactory;
-    public PeopleDAOImpl(SqlSessionFactory sqlSessionFactory) {
-        this.sqlSessionFactory = sqlSessionFactory;
-    }
+
     public void insert(PeopleDO people) {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         try{

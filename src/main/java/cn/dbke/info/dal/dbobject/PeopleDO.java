@@ -13,7 +13,7 @@ public class PeopleDO {
 
     private String name;
 
-    private char sex;
+    private String sex;
 
     private Date birthDay;
     private String birthplace;
@@ -42,11 +42,12 @@ public class PeopleDO {
         this.name = name;
     }
 
-    public char getSex() {
+
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(char sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
