@@ -13,11 +13,12 @@ public class PeopleDO {
 
     private String name;
 
-    private Integer sex;
+    private char sex;
 
     private Date birthDay;
+    private String birthplace;
 
-    private String phoneNumber;
+    private String telephone;
 
     private Integer roleId;
 
@@ -41,11 +42,11 @@ public class PeopleDO {
         this.name = name;
     }
 
-    public Integer getSex() {
+    public char getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(char sex) {
         this.sex = sex;
     }
 
@@ -57,12 +58,20 @@ public class PeopleDO {
         this.birthDay = birthDay;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public String getBirthplace() {
+        return birthplace;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setBirthplace(String birthplace) {
+        this.birthplace = birthplace;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
     }
 
     public Integer getRoleId() {

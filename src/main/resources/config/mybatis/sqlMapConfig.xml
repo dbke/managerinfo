@@ -20,4 +20,7 @@
      -->
     <!--<mappers>
     </mappers> -->
+    <mappers>
+        <mapper resource="config/mybatis/sqlmap/people-sqlmap.xml"></mapper>
+    </mappers>
 </configuration>

@@ -9,4 +9,5 @@
 	<bean id="peopleDAO" class="cn.dbke.info.dal.dao.impl.PeopleDAOImpl"/>
 
 
+
 </beans>

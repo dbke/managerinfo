@@ -2,6 +2,7 @@ package cn.dbke.info.dal.dao.impl;
 
 import cn.dbke.info.dal.dao.PeopleDAO;
 import cn.dbke.info.dal.dbobject.PeopleDO;
+import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,11 +19,20 @@ public class PeopleDAOImpl implements PeopleDAO,InitializingBean{
 
     private static String NAME_SPACE = "PeopleDAO.";
 
-    @Resource
+//    @Resource
     private SqlSessionFactory sqlSessionFactory;
+    public PeopleDAOImpl(SqlSessionFactory sqlSessionFactory) {
+        this.sqlSessionFactory = sqlSessionFactory;
+    }
+    public void insert(PeopleDO people) {
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        try{
+            sqlSession.insert("cn.dbke.info.dal.dao.PeopleDAO.insertPeople",people);
+            sqlSession.commit();
+        }finally{
+            sqlSession.close();
+        }
 
-    public int insert(PeopleDO people) {
-        return 0;
     }
 
     public void afterPropertiesSet() throws Exception {
