@@ -5,8 +5,7 @@
         default-autowire="byName">
 
        <!-- 配置数据源 ，dbcp -->
-       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
-             destroy-method="close">
+       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
               <property name="driverClassName" value="${jdbc.driver}" />
               <property name="url" value="${jdbc.url}" />
               <property name="username" value="${jdbc.username}" />
@@ -17,15 +16,17 @@
 
 
 
-    <bean id="sqlSessionFactoryBuilder" class="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
 
        <!-- sqlSessionFactory -->
        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-           <property name="sqlSessionFactoryBuilder" ref="sqlSessionFactoryBuilder"/>
            <property name="dataSource" ref="dataSource"/>
               <!-- 加载mybatis的全局配置文件 -->
               <property name="configLocation" value="classpath:config/mybatis/sqlMapConfig.xml" />
               <property name="mapperLocations" value="classpath*:config/mybatis/sqlmap/*-sqlmap.xml"/>
        </bean>
+
+    <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
 
 </beans>
