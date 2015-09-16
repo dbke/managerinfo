@@ -14,8 +14,7 @@ import javax.annotation.Resource;
  * Created by liyangtao on 15/9/15.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath*:config/spring/persistence.xml",
-                       "classpath*:config/spring/biz-dao.xml"})
+@ContextConfiguration(locations = {"classpath*:config/applicationContext.xml"})
 public class PeopleDAOTest {
     /*@Before
     public void setUp()throws Exception{
