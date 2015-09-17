@@ -11,16 +11,21 @@
 
 	<!-- 可以扫描controller、service、...
 	 -->
-	<context:component-scan base-package="cn.dbke.info.controller"></context:component-scan>
+	<mvc:annotation-driven />
+	<context:component-scan base-package="cn.dbke.info.controller"/>
 
-    <mvc:annotation-driven ></mvc:annotation-driven>
-
-	<!-- 视图解析器-->
-	<bean
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="prefix" value="/WEB-INF/jsp/"/>
-		<property name="suffix" value=".jsp"/>
+	
+	<bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath" value="/WEB-INF/view/" />
 	</bean>
+	<bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+
+		<property name="prefix" value=""/>
+		<property name="suffix" value=".vm"/>
+	</bean>
+
+
+
 	
 
 </beans>

@@ -3,7 +3,6 @@ package cn.dbke.info.controller;
 import cn.dbke.info.domain.ItemsCustom;
 import cn.dbke.info.service.ItemsService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -12,7 +11,7 @@ import java.util.List;
 /**
  * Created by lpd on 2015/9/11.
  */
-@Controller
+
 public class ItemsController {
     @Autowired
     private ItemsService itemsService;//service对象
