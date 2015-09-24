@@ -8,5 +8,4 @@ public interface PeopleDAO {
     void insert(PeopleDO people);
 
 
-
 }

@@ -6,6 +6,7 @@
 
     <context:property-placeholder location="classpath:props/dev.properties"/>
 
+    <context:component-scan base-package="cn.dbke.info"/>
 
     <!--初始化持久层-->
     <import resource="classpath*:config/spring/persistence.xml"/>

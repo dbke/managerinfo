@@ -1,1 +1,127 @@
-hello,dbke!......tianmai
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>支付宝账单管理页面</title>
+
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+
+</head>
+<body>
+<div class="page-header">
+    <h2><p class="text-info">凭证账单渠道信息管理</p></h2>
+</div>
+
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">条件1</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">条件2</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+            </div>
+            <button type="submit" class="btn btn-default">
+                <span class="glyphicon glyphicon-search" aria-hidden="true"/>查询</button>
+        </form>
+    </div>
+</div>
+
+</br>
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <table class="table table-hover table-condensed">
+            <thead>
+            <tr>
+                <th>序号</th>
+                <th>业务类型</th>
+                <th>类目</th>
+                <th>创建人</th>
+                <th>状态</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody >
+            <tr>
+                <td>aaa</td>
+                <td>bbb</td>
+                <td>ccc</td>
+                <td>ddd</td>
+                <td>eee</td>
+                <td>fff</td>
+                <td>ggg-------------------------------------</td>
+                <td>
+                    <div>
+                        <form class="form" method="post" id="updateForm">
+
+                            <input type="hidden" id="action" name="action" value="doUpdate"/>
+                            <input type="hidden" id="aacId" name="aacId" value="$!{autoAuditConfig.aacId}"/>
+                            <input type="hidden" id="businessId" name="businessId" value="$!queryBusinessId" />
+                            <input type="hidden" id="categoryId" name="categoryId" value="$!queryCategoryId" />
+                            <input type="hidden" id="creatorNick"  name="creatorNick" value="$!queryCreatorNick" />
+
+                            <input type="submit" class="btn btn-danger btn-sm" value="修改"  name="event_submit_do_disable" onclick="javascript:return window.confirm('确定更新该账单吗？')" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>aaa</td>
+                <td>bbb</td>
+                <td>ccc</td>
+                <td>ddd</td>
+                <td>eee</td>
+                <td>
+                    <input type="text" value="fff" class="form-control"></input>
+
+                </td>
+                <td>ggg</td>
+                <td>
+                    <div>
+                        <form class="form" method="post" id="updateForm">
+
+                            <input type="hidden" id="action" name="action" value="doUpdate"/>
+                            <input type="hidden" id="aacId" name="aacId" value="$!{autoAuditConfig.aacId}"/>
+                            <input type="hidden" id="businessId" name="businessId" value="$!queryBusinessId" />
+                            <input type="hidden" id="categoryId" name="categoryId" value="$!queryCategoryId" />
+                            <input type="hidden" id="creatorNick"  name="creatorNick" value="$!queryCreatorNick" />
+
+                            <input type="submit" class="btn btn-danger btn-sm" value="修改"  name="event_submit_do_disable" onclick="javascript:return window.confirm('确定更新该账单吗？')" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
+

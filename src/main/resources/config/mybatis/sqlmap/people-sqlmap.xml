@@ -11,7 +11,8 @@
     <result column="role_id" property="roleId" jdbcType="INTEGER" />
 </resultMap>
   <insert id="insertPeople" parameterType="cn.dbke.info.dal.dbobject.PeopleDO">
-    insert into people(name,sex,role_id) value(#{name},#{sex},#{roleId})
+    insert into people(<![CDATA[name]]>,sex,role_id) value(#{name},#{sex},#{roleId})
   </insert>
+
 
 </mapper>
