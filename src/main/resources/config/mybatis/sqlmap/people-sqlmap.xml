@@ -9,7 +9,7 @@
     <result column="birthplace" property="birthplace" jdbcType="VARCHAR" />
     <result column="telephone" property="telephone" jdbcType="VARCHAR" />
     <result column="role_id" property="roleId" jdbcType="INTEGER" />
-</resultMap>
+  </resultMap>
   <insert id="insertPeople" parameterType="cn.dbke.info.dal.dbobject.PeopleDO">
     insert into people(<![CDATA[name]]>,sex,role_id) value(#{name},#{sex},#{roleId})
   </insert>
